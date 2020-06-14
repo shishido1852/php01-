@@ -1,0 +1,135 @@
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+h1:before,
+h1:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+h1:after {
+  right: 7px;
+}
+
+.p_text {
+  text-align: center;
+  position: relative;
+  padding: 0.6em;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #fff5df,
+    #fff5df 4px,
+    #ffe4b1 3px,
+    #ffe4b1 8px
+  );
+  background: repeating-linear-gradient(
+    -45deg,
+    #fff5df,
+    #fff5df 4px,
+    #ffe4b1 3px,
+    #ffe4b1 8px
+  );
+  border-radius: 7px;
+}
+
+.p_text:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ffebbe;
+  width: 0;
+  height: 0;
+}
+
+/* .select_style {
+  text-align: center;
+  display: inline;
+  border: 1px;
+  font-size: 40x;
+} */
+
+.cp_ipselect {
+  overflow: hidden;
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
+}
+.cp_ipselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+  display: none;
+}
+.cp_ipselect.cp_sl04 {
+  position: relative;
+  border-radius: 2px;
+  border: 2px solid #da3c41;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.cp_ipselect.cp_sl04::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #da3c41;
+  pointer-events: none;
+}
+.cp_ipselect.cp_sl04 select {
+  padding: 8px 38px 8px 8px;
+  color: #da3c41;
+}
+.submit_style {
+  text-align: center;
+  border: 1px;
+  font-size: 24px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 50%; /* 角丸       */
+  font-size: 34pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 36px 36px; /* 余白       */
+  background: #000066; /* 背景色     */
+  color: #ffffff; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  box-shadow: 6px 6px 3px #666666; /* 影の設定 */
+  border: 2px solid #000066; /* 枠の指定 */
+}
+.button:hover {
+  box-shadow: none; /* カーソル時の影消去 */
+  color: #000066; /* 背景色     */
+  background: #ffffff; /* 文字色     */
+}
